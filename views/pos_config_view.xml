@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="pos_config_view_form_inherit_display_price" model="ir.ui.view">
+        <field name="name">pos.config.view.form.inherit.display.price</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//setting[@help='Connect devices using an IoT Box']/.." position="after">
+                <setting string="Display Price" help="Show full product price on POS product screens">
+                    <field name="display_price"/>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>
