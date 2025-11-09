@@ -9,8 +9,26 @@
 
 {
     'name': "Product Price Display",
-    'summary': """""",
-    'description': """""",
+    'summary': """
+        Adds an option in POS Settings to display each product’s price below the product card in the POS interface.
+    """,
+    'description': """
+        This module introduces a simple but powerful enhancement to the Odoo Point of Sale interface by allowing POS users to display product prices directly under product cards.
+        Key Features
+        Adds a new setting in Point of Sale → Configuration to enable or disable product price display.
+        When activated, the POS UI will show the product’s price below each product card.
+        Fully integrated with Odoo’s POS price computation, including:
+        Pricelists
+        Taxes
+        Discounts
+        Multi-currency (if applicable)
+        Lightweight and compatible with all POS themes.
+        No impact on POS performance.
+        Benefits
+        Provides clearer pricing visibility to POS cashiers.
+        Reduces mistakes when selecting products with similar images.
+        Enhances user experience by showing essential information directly in the product grid.
+    """,
     'author': "CDS Solutions SRL",
     'website': "https://www.cdsegypt.com",
     'contributors': [
