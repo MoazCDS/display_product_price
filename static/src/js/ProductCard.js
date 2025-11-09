@@ -9,6 +9,7 @@ patch(ProductCard.prototype, {
         super.setup();
         this.pos = usePos();
         this.productPrice = this.props.product.getPrice();
+        this.currencySymbol = this.pos.currency.symbol;
     },
     get showPrice() {
         return this.pos.config.display_price === true;

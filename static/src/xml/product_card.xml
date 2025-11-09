@@ -3,7 +3,7 @@
     <t t-inherit="point_of_sale.ProductCard" t-inherit-mode="extension">
         <xpath expr="//article" position="inside">
             <div class="my-extra-info text-center w-100 mt-1">
-                $ <t t-esc="this.productPrice"/>
+                <t t-esc="this.currencySymbol"/> <t t-esc="this.productPrice"/>
             </div>
         </xpath>
     </t>
